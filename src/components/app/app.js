@@ -3,11 +3,16 @@ import React, {Component} from 'react';
 import Header from '../header';
 import RandomPlanet from '../random-planet';
 import ItemList from '../item-list';
-import PersonDetails from '../person-details';
+import ItemDetails from '../item-details';
+import Row from "../row";
 
 import './app.css';
+import SwapiService from "../../services/swapi-service";
+import PeoplePage from "../people-page";
 
 export default class App extends Component {
+    swapiService = new SwapiService();
+
     state = {
         showRandomPlanet: true,
         selectedPerson: 5,
@@ -21,14 +26,24 @@ export default class App extends Component {
         });
     };
 
-    onPersonSelected = (id) => {
-        this.setState({
-            selectedPerson: id,
-        });
-    };
-
     render() {
         const randomPlanet = this.state.showRandomPlanet ? <RandomPlanet/> : null;
+        const {getPerson, getPersonImage, getStarship, getStarshipImage} = this.swapiService;
+
+        const personDetails = (
+            <ItemDetails
+                itemId={2}
+                getData={getPerson}
+                getImageUrl={getPersonImage}
+            />
+        );
+        const starshipDetails = (
+            <ItemDetails
+                itemId={5}
+                getData={getStarship}
+                getImageUrl={getStarshipImage}
+            />
+        );
 
         return (
             <div>
@@ -40,14 +55,8 @@ export default class App extends Component {
                     Toggle Random Planet
                 </button>
 
-                <div className="row mb2">
-                    <div className="col-md-6">
-                        <ItemList onItemSelected={this.onPersonSelected} />
-                    </div>
-                    <div className="col-md-6">
-                        <PersonDetails personId={this.state.selectedPerson}/>
-                    </div>
-                </div>
+                <Row left={personDetails} right={starshipDetails}/>
+
             </div>
         )
     };
