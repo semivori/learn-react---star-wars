@@ -2,17 +2,14 @@ import React, {Component} from 'react';
 
 import Header from '../header';
 import RandomPlanet from '../random-planet';
-import ItemList from '../item-list';
-import ItemDetails from '../item-details';
-import Row from "../row";
+import ItemDetails, {Record} from '../item-details/item-details';
 
 import './app.css';
 import SwapiService from "../../services/swapi-service";
-import PeoplePage from "../people-page";
+import ErrorBoundary from "../error-boudary";
+import {PersonDetails, PersonList, PlanetDetails, PlanetList, StarshipDetails, StarshipList} from "../sw-components";
 
 export default class App extends Component {
-    swapiService = new SwapiService();
-
     state = {
         showRandomPlanet: true,
         selectedPerson: 5,
@@ -28,36 +25,22 @@ export default class App extends Component {
 
     render() {
         const randomPlanet = this.state.showRandomPlanet ? <RandomPlanet/> : null;
-        const {getPerson, getPersonImage, getStarship, getStarshipImage} = this.swapiService;
-
-        const personDetails = (
-            <ItemDetails
-                itemId={2}
-                getData={getPerson}
-                getImageUrl={getPersonImage}
-            />
-        );
-        const starshipDetails = (
-            <ItemDetails
-                itemId={5}
-                getData={getStarship}
-                getImageUrl={getStarshipImage}
-            />
-        );
 
         return (
-            <div>
-                <Header />
-                {randomPlanet}
+            <ErrorBoundary>
+                <div className="stardb-app">
+                    <Header />
+                    {randomPlanet}
 
-                <button className="toggle-planet btn btn-warning btn-lg"
-                        onClick={this.toggleRandomPlanet}>
-                    Toggle Random Planet
-                </button>
+                    <PersonDetails itemId={11} />
+                    <PlanetDetails itemId={5} />
+                    <StarshipDetails itemId={9} />
 
-                <Row left={personDetails} right={starshipDetails}/>
-
-            </div>
+                    <PersonList/>
+                    <StarshipList/>
+                    <PlanetList/>
+                </div>
+            </ErrorBoundary>
         )
     };
 };

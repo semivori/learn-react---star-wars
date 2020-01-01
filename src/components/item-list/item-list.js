@@ -1,52 +1,27 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import './item-list.css';
-import Spinner from "../spinner";
 
-export default class ItemList extends Component {
+const ItemList = (props) => {
+    const {data, onItemSelected, children: renderLabel} = props;
 
-    state = {
-        itemList: null,
-    };
-
-    componentDidMount() {
-        const {getData} = this.props;
-
-        getData().then((itemList) => {
-                this.setState({
-                    itemList
-                })
-            })
-    }
-
-    renderItems(arr) {
-        const {onItemSelected} = this.props;
-
-        return arr.map((item) => {
-            const {id} = item;
-            const label = this.props.children(item);
-            return (
-                <li className="list-group-item"
-                    key={id}
-                    onClick={() => onItemSelected(id)}>
-                    {label}
-                </li>
-            )
-        })
-    }
-
-    render() {
-
-        const {itemList} = this.state;
-
-        if (!itemList) {
-            return <Spinner/>
-        }
+    const items = data.map((item) => {
+        const {id} = item;
+        const label = renderLabel(item);
 
         return (
-            <ul className="item-list list-group">
-                {this.renderItems(itemList)}
-            </ul>
-        );
-    }
-}
+            <li className="list-group-item"
+                key={id}
+                onClick={() => onItemSelected(id)}>
+                {label}
+            </li>
+        )
+    });
+
+    return (
+        <ul className="item-list list-group">
+            {items}
+        </ul>
+    );
+};
+
+export default ItemList;

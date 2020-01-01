@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2e64bd-0d1d-4cb4-9869-d30ed983f3c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/error-boudary/error-boundary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/error-boudary/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/people-page/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/people-page/people-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/row/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/row/row.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/row/row.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sw-components/details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sw-components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sw-components/item-lists.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-details/item-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-details/item-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/swapi-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/row/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/row.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +118,8 @@
       <workItem from="1576372601097" duration="15000" />
       <workItem from="1576372657377" duration="756000" />
       <workItem from="1577614966186" duration="9268000" />
-      <workItem from="1577768010605" duration="8341000" />
+      <workItem from="1577768010605" duration="8612000" />
+      <workItem from="1577851569282" duration="6817000" />
     </task>
     <servers />
   </component>
