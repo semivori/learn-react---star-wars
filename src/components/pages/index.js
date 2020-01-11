@@ -1,2 +1,4 @@
 import PeoplePage from "./people-page";
-export default PeoplePage;
+export {
+    PeoplePage,
+}
