@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2e64bd-0d1d-4cb4-9869-d30ed983f3c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/compoe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-child-function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/people-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hoc-helpers/with-swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-swapi-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/people-page/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/people-page/people-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sw-components/item-lists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/item-lists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sw-components/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/person-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sw-components/planet-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/planet-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sw-components/starship-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sw-components/starship-details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/row/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/row.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +115,8 @@
       <workItem from="1577768010605" duration="8612000" />
       <workItem from="1577851569282" duration="6930000" />
       <workItem from="1578111431873" duration="5694000" />
-      <workItem from="1578717021971" duration="4304000" />
+      <workItem from="1578717021971" duration="4534000" />
+      <workItem from="1578733769594" duration="1280000" />
     </task>
     <servers />
   </component>
